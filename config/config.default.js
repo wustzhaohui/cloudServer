@@ -1,3 +1,11 @@
+/*
+ * @Author: zhaohui
+ * @Date: 2019-10-28 11:30:24
+ * @LastEditTime: 2020-07-10 17:05:27
+ * @LastEditors: zhaohui
+ * @Description: 
+ * @FilePath: /cloudServer/config/config.default.js
+ */
 /* eslint valid-jsdoc: "off" */
 
 'use strict';
@@ -41,18 +49,18 @@ module.exports = appInfo => {
         // 是否加载到 agent 上，默认关闭
         agent: false
     };
-    config.security = {
-        csrf: {
-            enable: false,
-            ignoreJSON: true
-        },
-        domainWhiteList: ['*']
-    };
+    // config.security = {
+    //     csrf: {
+    //         enable: true,
+    //         ignoreJSON: false
+    //     },
+    //     domainWhiteList: ['*']
+    // };
 
-    config.cors = {
-        origin: '*',
-        allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
-    };
+    // config.cors = {
+    //     origin: ['https://musicserver.fullmastach.club'],
+    //     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+    // };
 
     return {
         ...config,
